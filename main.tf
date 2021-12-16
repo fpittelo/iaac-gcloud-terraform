@@ -6,7 +6,7 @@ provider "google" {
 resource "google_compute_instance" "vm_instance" {
   name         = "terraform-instance"
   machine_type = "e2-micro"
-  allow_stopping_for_update = true
+  desired_status = "RUNNING"
 
   boot_disk {
     initialize_params {
