@@ -3,7 +3,7 @@ provider "google" {
   region  = "europe-west6"
   zone    = "europe-west6-b"
 }
-resource "google_compute_instance" "vm_instance" {
+resource "google_compute_instance" "default" {
   name         = "terraform-instance"
   machine_type = "e2-micro"
   desired_status = "RUNNING"
