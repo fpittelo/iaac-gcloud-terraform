@@ -3,7 +3,7 @@ provider "google" {
   region  = "europe-west6"
   zone    = "europe-west6-b"
 }
-resource "google_compute_instance" "default" {
+resource "google_compute_instance" "test-net" {
   name         = "freyr"
   machine_type = "e2-micro"
   desired_status = "RUNNING"
