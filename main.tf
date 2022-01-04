@@ -4,7 +4,7 @@ provider "google" {
   zone    = "europe-west6-b"
 }
 resource "google_compute_instance" "default" {
-  name         = "terraform-instance"
+  name         = "freyr"
   machine_type = "e2-micro"
   desired_status = "RUNNING"
 
@@ -16,7 +16,7 @@ resource "google_compute_instance" "default" {
 
   network_interface {
     # A default network is created for all GCP projects
-    network = "default"
+    network = "test-net	"
     access_config {
     }
   }
